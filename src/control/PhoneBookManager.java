@@ -63,7 +63,7 @@ public class PhoneBookManager {
             }
         }
         else {
-            System.out.println("khong tim thay sdt nao ca !");
+            System.out.println("Không tìm thấy số điện thoại nào cả !");
         }
     }
     // xoa nguoi trong danh ba
@@ -78,7 +78,7 @@ public class PhoneBookManager {
             }
         }
         else {
-            System.out.println("khong tim thay sdt nao ca !");
+            System.out.println("không tìm thấy số điện thoại nào cả !");
         }
     }
 }

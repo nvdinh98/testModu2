@@ -65,7 +65,7 @@ public class PhoneBookMenu {
                     removePhoneBook(phoneBookManager);
                     break;
                 case 5:
-                    System.out.println( "so dien thoai can tim la :" +   phoneBookManager.searchPhoneBook(inputPhoneNumber()));
+                    System.out.println( "Số điện thoại cần tìm là :" +   phoneBookManager.searchPhoneBook(inputPhoneNumber()));
                     break;
                 case 6:
                     readFile();
@@ -118,19 +118,19 @@ public class PhoneBookMenu {
         String gender;
         String birthOfDay;
 
-        System.out.println("nhap so dien thoai");
+        System.out.println("Nhập số điện thoại");
         phoneNumber = sc.nextLine();
-        System.out.println("nhap nhom danh ba");
+        System.out.println("nhập nhóm danh bak");
         groupOfContacts = sc.nextLine();
-        System.out.println("nhap ten danh ba");
+        System.out.println("nhập tên danh bạ");
         userName = sc.nextLine();
-        System.out.println("nhap dia chi");
+        System.out.println("nhập địa chỉ");
         address = sc.nextLine();
-        System.out.println("nhap email");
+        System.out.println("nhập email");
         email = sc.nextLine();
-        System.out.println("nhap gioi tinh");
+        System.out.println("Nhập giới tính");
         gender= sc.nextLine();
-        System.out.println("nhap ngay thang nam sinh");
+        System.out.println("Nhập ngày tháng nam sinh");
         birthOfDay = sc.nextLine();
 
         return new PhoneBook(phoneNumber,groupOfContacts,userName,address,email,gender,birthOfDay);
@@ -138,7 +138,7 @@ public class PhoneBookMenu {
 
     // nhap input phoneNumber
     public String inputPhoneNumber(){
-        System.out.println("nhap so dien thoai");
+        System.out.println("Nhập số điện thoại");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
